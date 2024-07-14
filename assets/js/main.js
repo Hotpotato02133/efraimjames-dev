@@ -1,4 +1,17 @@
-// Formspree code
+// EmailJS Integration
+function sendMail(){
+  let parms = {
+    name : document.getElementById("name").value,
+    email : document.getElementById("email").value,
+    subject : document.getElementById("subject").value,
+    message : document.getElementById("message").value,
+  }
+
+  emailjs.send("service_gkylvhe", "template_orw5xze", parms).then(alert("Email Sent!"))
+}
+
+
+
 const form = document.getElementById("contact-form");
 
 async function handleSubmit(event) {
@@ -206,7 +219,7 @@ themeButton.addEventListener("click", () => {
 
 // Typing Animation using Typed JS
 var typed = new Typed(".type", {
-  strings: ["Efraim James Talucod", "a Developer", "willing to learn and adapt new things", "open for opportunities", "inviting you to check my portfolio" ],
+  strings: ["Efraim James Talucod", "passionate on creating innovative solutions", "willing to adopt and learn new things", "open for new opportunities", "inviting you to check my portfolio" ],
   smartBackspace: true,
   startDelay: 1000,
   typeSpeed: 130,

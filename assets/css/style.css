@@ -553,6 +553,11 @@ button {
 }
 
 /* QUALIFICATION */
+.divider {
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
 .qualification_tabs {
   display: flex;
   justify-content: space-evenly;
@@ -590,6 +595,16 @@ button {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
+}
+
+.qualification_subtitlee {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification_subtitlee a:hover {
+  color: hsl(var(--hue-color), 12%, 36%);
 }
 
 .qualification_subtitle a {
